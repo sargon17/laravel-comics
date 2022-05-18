@@ -3,15 +3,19 @@
 @import "partials/_main";
 @import "partials/_banner";
 @import "partials/_footer";
+@import "partials/_comicDetail";
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Open Sans" serif;
 }
 
 body {
+    font-family: "Open Sans" serif;
     background: #000;
     height: 100vh;
     width: 100vw;
+    scroll-behavior: smooth;
 }

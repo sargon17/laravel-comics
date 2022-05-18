@@ -8,13 +8,14 @@
         <div class="main__cards-list">
           @foreach($comics as $comic)
             <div class="main__card">
-              <div class="main__card-image">
-                <img src="{{ $comic['thumb'] }}" alt="">
-              </div>
-              <div class="main__card-content">
-                <h3>{{ $comic['title'] }}</h3>
-                <p>{{ $comic['description'] }}</p>
-              </div>
+              <a href="/detail">
+                <div class="main__card-image">
+                  <img src="{{ $comic['thumb'] }}" alt="">
+                </div>
+                <div class="main__card-content">
+                  <h3>{{ $comic['title'] }}</h3>
+                </div>
+              </a>
             </div>
           @endforeach
         </div>
