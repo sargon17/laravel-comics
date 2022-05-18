@@ -14,5 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get("/", function () {
-    return view("home");
+    $comics = include app_path() . "/resources/data/comics.php";
+
+    return view("home", compact("comics"));
 });

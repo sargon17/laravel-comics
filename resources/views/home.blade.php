@@ -8,8 +8,10 @@
     <title>Document</title>
 </head>
 <body>
-    @include('partials.header');
-    @include('partials.main');
+    @include('partials.header')
+    @include('partials.main')
+    @include('partials.banner')
+    @include('partials.footer')
     
 </body>
 </html>
