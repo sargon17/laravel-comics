@@ -1,1 +1,23 @@
 //
+@import "partials/_header";
+@import "partials/_main";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #000;
+    height: 100vh;
+    width: 100vw;
+}
+
+h1 {
+    color: #fff;
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
