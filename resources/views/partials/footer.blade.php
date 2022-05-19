@@ -33,41 +33,15 @@
           <div class="footer-bottom__content__social-media">
             <h3>Follow us</h3>
             <ul>
-              <li
-                class="footer-bottom__content__social-media__item"
-              >
-                <a href="#">
-                  <img src="/assets/footer-facebook.png" alt="" />
-                </a>
-              </li>
-                            <li
-                class="footer-bottom__content__social-media__item"
-              >
-                <a href="#">
-                  <img src="/assets/footer-twitter.png" alt="" />
-                </a>
-              </li>
-                            <li
-                class="footer-bottom__content__social-media__item"
-              >
-                <a href="#">
-                  <img src="/assets/footer-youtube.png" alt="" />
-                </a>
-              </li>
-                            <li
-                class="footer-bottom__content__social-media__item"
-              >
-                <a href="#">
-                  <img src="/assets/footer-pinterest.png" alt="" />
-                </a>
-              </li>
-                            <li
-                class="footer-bottom__content__social-media__item"
-              >
-                <a href="#">
-                  <img src="/assets/footer-periscope.png" alt="" />
-                </a>
-              </li>
+                @foreach ( $social as $item )
+                <li
+                  class="footer-bottom__content__social-media__item"
+                >
+                  <a href="{{$item['url']}}" id="{{$item['id']}}">
+                    <img src="{{$item['icon']}}" alt="{{$item['name']}}" />
+                  </a>
+                </li>
+                @endforeach
             </ul>
           </div>
         </div>
