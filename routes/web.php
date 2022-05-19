@@ -16,14 +16,19 @@ use Illuminate\Support\Facades\Route;
 Route::get("/", function () {
     $nav = config("nav");
     $footerNav = config("footerNav");
+    $social = config("social");
     $comics = config("comics");
 
-    return view("home", compact(["comics", "nav", "footerNav"]));
+    return view("home", compact(["comics", "nav", "footerNav", "social"]));
 });
 
 Route::get("/detail/{id}", function ($id) {
     $nav = config("nav");
     $footerNav = config("footerNav");
+    $social = config("social");
     $comics = config("comics");
-    return view("detail", compact(["comics", "nav", "footerNav", "id"]));
+    return view(
+        "detail",
+        compact(["comics", "nav", "footerNav", "social", "id"])
+    );
 });
