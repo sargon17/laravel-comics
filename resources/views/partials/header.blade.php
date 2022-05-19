@@ -36,6 +36,14 @@
               <a href="#" class="header__nav-item-link">shop</a>
             </li>
           </ul>
+          <div class="search-input">
+            <input type="text" placeholder="Search" />
+            <button class="search-btn">
+          <i class="fa-regular fa-magnifying-glass"></i>
+          S
+            </button>
+
+          </div>
         </nav>
       </div>
     </header>

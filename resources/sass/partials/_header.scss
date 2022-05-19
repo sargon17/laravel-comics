@@ -21,6 +21,10 @@
         }
     }
     &__nav {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 20px;
         &-list {
             display: flex;
             align-items: center;
@@ -57,6 +61,36 @@
                     transform-origin: center;
                     transition: transform 0.2s ease-in-out;
                 }
+            }
+        }
+        .search-input {
+            border-bottom: 4px solid #0282f9;
+            padding: 0 10px;
+            font-size: 14px;
+            font-weight: 600;
+            color: #383838;
+            transition: color 0.2s ease-in-out;
+
+            input {
+                height: 100%;
+                border: none;
+                background: transparent;
+                outline: none;
+                font-size: 14px;
+                font-weight: 600;
+                color: #383838;
+                transition: color 0.2s ease-in-out;
+                text-align: right;
+                &:focus {
+                    color: #0282f9;
+                }
+            }
+            button {
+                height: 100%;
+                border: none;
+                background: transparent;
+                outline: none;
+                cursor: pointer;
             }
         }
     }
