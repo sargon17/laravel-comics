@@ -2,159 +2,22 @@
     <div class="footer-top">
       <div class="footer-content">
         <div class="footer-top__content">
-          <div
+            @foreach ( $footerNav as $menu )
+            <div
             class="footer-top__content__nav-list"
           >
-            <h3>DC comics</h3>
+            <h3>{{$menu['title']}}</h3>
             <ul>
+                @foreach ( $menu['links'] as $item )
               <li
-                class="footer-top__content__nav-item"
-              >
-                <a :href="#">Characters</a>
+                class="footer-top__content__nav-item">
+                <a href="{{$item['url']}}">{{$item['title']}}</a>
               </li>
-               <li
-                class="footer-top__content__nav-item"
-              >
-                <a :href="#">Comics</a>
-              </li>
-               <li
-                class="footer-top__content__nav-item"
-              >
-                <a :href="#">Movies</a>
-              </li>
-               <li
-                class="footer-top__content__nav-item"
-              >
-                <a :href="#">TV</a>
-              </li>
-               <li
-                class="footer-top__content__nav-item"
-              >
-                <a :href="#">Games</a>
-              </li>
-               <li
-                class="footer-top__content__nav-item"
-              >
-                <a :href="#">Videos</a>
-              </li>
-               <li
-                class="footer-top__content__nav-item"
-              >
-                <a :href="#">News</a>
-              </li>
+              @endforeach
+
             </ul>
           </div>
-           <div
-            class="footer-top__content__nav-list"
-          >
-            <h3>Shop</h3>
-            <ul>
-              <li
-                class="footer-top__content__nav-item"
-              >
-                <a :href="#">Shop DC</a>
-              </li>
-               <li
-                class="footer-top__content__nav-item"
-              >
-                <a :href="#">Shop DC Collectibles</a>
-              </li>
-            </ul>
-          </div>
-           <div
-            class="footer-top__content__nav-list"
-          >
-            <h3>DC</h3>
-            <ul>
-              <li
-                class="footer-top__content__nav-item"
-              >
-                <a :href="#">Terms Of Use</a>
-              </li>
-               <li
-                class="footer-top__content__nav-item"
-              >
-                <a :href="#">Privacy policy (new)</a>
-              </li>
-               <li
-                class="footer-top__content__nav-item"
-              >
-                <a :href="#">Ad Choices</a>
-              </li>
-               <li
-                class="footer-top__content__nav-item"
-              >
-                <a :href="#">Advertising</a>
-              </li>
-               <li
-                class="footer-top__content__nav-item"
-              >
-                <a :href="#">Jobs</a>
-              </li>
-               <li
-                class="footer-top__content__nav-item"
-              >
-                <a :href="#">Subscriptions</a>
-              </li>
-               <li
-                class="footer-top__content__nav-item"
-              >
-                <a :href="#">Talent Workshop</a>
-              </li>
-              <li
-                class="footer-top__content__nav-item"
-              >
-                <a :href="#">CPSC Certificates</a>
-              </li>
-              <li
-                class="footer-top__content__nav-item"
-              >
-                <a :href="#">Ratings</a>
-              </li>
-              <li
-                class="footer-top__content__nav-item"
-              >
-                <a :href="#">Shop Help</a>
-              </li>
-              <li
-                class="footer-top__content__nav-item"
-              >
-                <a :href="#">Contact Us</a>
-              </li>
-            </ul>
-          </div>
-           <div
-            class="footer-top__content__nav-list"
-          >
-            <h3>Sites</h3>
-            <ul>
-              <li
-                class="footer-top__content__nav-item"
-              >
-                <a :href="#">DC</a>
-              </li>
-               <li
-                class="footer-top__content__nav-item"
-              >
-                <a :href="#">MAD Magazine</a>
-              </li>
-               <li
-                class="footer-top__content__nav-item"
-              >
-                <a :href="#">DC Kids</a>
-              </li>
-               <li
-                class="footer-top__content__nav-item"
-              >
-                <a :href="#">DC Universe</a>
-              </li>
-               <li
-                class="footer-top__content__nav-item"
-              >
-                <a :href="#">DC Power Visa</a>
-</li>
-            </ul>
-          </div>
+            @endforeach
         </div>
         <div class="footer-top__logo">
           <img src="../assets/dc-logo-bg.png" alt="" />
