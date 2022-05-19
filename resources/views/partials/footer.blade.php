@@ -174,35 +174,35 @@
                 class="footer-bottom__content__social-media__item"
               >
                 <a href="#">
-                  <img src="assets/footer-facebook.png" alt="" />
+                  <img src="/assets/footer-facebook.png" alt="" />
                 </a>
               </li>
                             <li
                 class="footer-bottom__content__social-media__item"
               >
                 <a href="#">
-                  <img src="assets/footer-twitter.png" alt="" />
+                  <img src="/assets/footer-twitter.png" alt="" />
                 </a>
               </li>
                             <li
                 class="footer-bottom__content__social-media__item"
               >
                 <a href="#">
-                  <img src="assets/footer-youtube.png" alt="" />
+                  <img src="/assets/footer-youtube.png" alt="" />
                 </a>
               </li>
                             <li
                 class="footer-bottom__content__social-media__item"
               >
                 <a href="#">
-                  <img src="assets/footer-pinterest.png" alt="" />
+                  <img src="/assets/footer-pinterest.png" alt="" />
                 </a>
               </li>
                             <li
                 class="footer-bottom__content__social-media__item"
               >
                 <a href="#">
-                  <img src="assets/footer-periscope.png" alt="" />
+                  <img src="/assets/footer-periscope.png" alt="" />
                 </a>
               </li>
             </ul>
