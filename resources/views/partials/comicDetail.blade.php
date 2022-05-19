@@ -4,7 +4,15 @@
         </div>
         <div class="top-container__cover-section">
             <div class="container">
-                <img src="{{ $comics[0]['thumb'] }}" alt="" class="top-container__cover">
+                <div class="top-container__cover">
+                    <img src="{{ $comics[0]['thumb'] }}" alt="">
+                    <div class="top-left-tag">
+                        <p>comic book</p>
+                    </div>
+                    <div class="bottom-tag">
+                        <p>view gallery</p>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="top-container__content-section__wrapper">
@@ -29,6 +37,7 @@
                         <p>{{ $comics[0]['description'] }}</p>
                     </div>
                     <div class="advertising-section">
+                        <p class="adv-identity">Advertisement</p>
                         <img src="assets/adv.jpg" alt="">
                     </div>
                 </div>
