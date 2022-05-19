@@ -5,7 +5,7 @@
         <div class="top-container__cover-section">
             <div class="container">
                 <div class="top-container__cover">
-                    <img src="{{ $comics[0]['thumb'] }}" alt="">
+                    <img src="{{ $comics[$id]['thumb'] }}" alt="">
                     <div class="top-left-tag">
                         <p>comic book</p>
                     </div>
@@ -19,12 +19,12 @@
             <div class="container">
                 <div class="top-container__content-section">
                     <div class="top-container__content">
-                        <h1>{{ $comics[0]['title'] }}</h1>
+                        <h1>{{ $comics[$id]['title'] }}</h1>
                         <div class="strange-green-thing__container">
                             <div class="strange-green-thing__price">
                                 <p>
                                     U.S. Price:
-                                    <span>{{ $comics[0]['price'] }}</span>
+                                    <span>{{ $comics[$id]['price'] }}</span>
                                 </p>
                                 <div class="strange-green-thing__price-disponibility">
                                     <p>AVAILABLE</p>
@@ -34,11 +34,11 @@
                                 <p>Check Availability</p>
                             </div>
                         </div>
-                        <p>{{ $comics[0]['description'] }}</p>
+                        <p>{{ $comics[$id]['description'] }}</p>
                     </div>
                     <div class="advertising-section">
                         <p class="adv-identity">Advertisement</p>
-                        <img src="assets/adv.jpg" alt="">
+                        <img src="/assets/adv.jpg" alt="">
                     </div>
                 </div>
             </div>
@@ -54,7 +54,7 @@
                             <div class="specific__talent-box__content">
                                 <h4>Art by:</h4>
                                 <p>
-                                    @foreach ($comics[0]['artists'] as $artist)
+                                    @foreach ($comics[$id]['artists'] as $artist)
                                         <span class="artist">{{ $artist }}</span>,
                                     @endforeach
                                 </p>
@@ -64,7 +64,7 @@
                             <div class="specific__talent-box__content">
                                 <h4>Written by:</h4>
                                 <p>
-                                    @foreach ($comics[0]['writers'] as $writer)
+                                    @foreach ($comics[$id]['writers'] as $writer)
                                         <span class="artist">{{ $writer }}</span>,
                                     @endforeach
                                 </p>
@@ -79,7 +79,7 @@
                             <div class="specific__talent-box__content">
                                 <h4>Series:</h4>
                                 <p>
-                                   <span class="serie">{{ $comics[0]['series'] }}</span>
+                                   <span class="serie">{{ $comics[$id]['series'] }}</span>
                                 </p>
                             </div>
                         </div>
@@ -87,7 +87,7 @@
                             <div class="specific__talent-box__content">
                                 <h4>U.S. Price:</h4>
                                 <p>
-                                    {{ $comics[0]['price'] }}
+                                    {{ $comics[$id]['price'] }}
                                 </p>
                             </div>
                         </div>
@@ -95,7 +95,7 @@
                             <div class="specific__talent-box__content">
                                 <h4>On Sale Date:</h4>
                                 <p>
-                                    {{ $comics[0]['sale_date'] }}
+                                    {{ $comics[$id]['sale_date'] }}
                                 </p>
                             </div>
                         </div>

@@ -13,7 +13,7 @@
                   <img src="{{ $comic['thumb'] }}" alt="">
                 </div>
                 <div class="main__card-content">
-                  <h3>{{ $comic['title'] }}</h3>
+                  <h3>{{ $comic['series'] }}</h3>
                 </div>
               </a>
             </div>
