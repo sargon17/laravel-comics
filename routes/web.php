@@ -17,18 +17,23 @@ Route::get("/", function () {
     $nav = config("nav");
     $footerNav = config("footerNav");
     $social = config("social");
+    $bannerData = config("bannerData");
     $comics = config("comics");
 
-    return view("home", compact(["comics", "nav", "footerNav", "social"]));
+    return view(
+        "home",
+        compact(["comics", "nav", "footerNav", "social", "bannerData"])
+    );
 });
 
 Route::get("/detail/{id}", function ($id) {
     $nav = config("nav");
     $footerNav = config("footerNav");
     $social = config("social");
+    $bannerData = config("bannerData");
     $comics = config("comics");
     return view(
         "detail",
-        compact(["comics", "nav", "footerNav", "social", "id"])
+        compact(["comics", "nav", "footerNav", "social", "bannerData", "id"])
     );
 });
