@@ -6,9 +6,9 @@
           <h2>Current Series</h2>
         </div>
         <div class="main__cards-list">
-          @foreach($comics as $comic)
+          @foreach($comics as $comicIndex => $comic)
             <div class="main__card">
-              <a href="/detail">
+              <a href="/detail/{{$comicIndex}}">
                 <div class="main__card-image">
                   <img src="{{ $comic['thumb'] }}" alt="">
                 </div>
