@@ -39,8 +39,7 @@
           <div class="search-input">
             <input type="text" placeholder="Search" />
             <button class="search-btn">
-          <i class="fa-regular fa-magnifying-glass"></i>
-          S
+          <i class="fa-solid fa-magnifying-glass"></i>
             </button>
 
           </div>
