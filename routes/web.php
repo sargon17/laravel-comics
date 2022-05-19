@@ -15,13 +15,15 @@ use Illuminate\Support\Facades\Route;
 
 Route::get("/", function () {
     $nav = config("nav");
+    $footerNav = config("footerNav");
     $comics = config("comics");
 
-    return view("home", compact(["comics", "nav"]));
+    return view("home", compact(["comics", "nav", "footerNav"]));
 });
 
 Route::get("/detail/{id}", function ($id) {
     $nav = config("nav");
+    $footerNav = config("footerNav");
     $comics = config("comics");
-    return view("detail", compact(["comics", "nav", "id"]));
+    return view("detail", compact(["comics", "nav", "footerNav", "id"]));
 });
