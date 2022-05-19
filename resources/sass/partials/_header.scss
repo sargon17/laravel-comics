@@ -61,6 +61,12 @@
                     transform-origin: center;
                     transition: transform 0.2s ease-in-out;
                 }
+                &-active {
+                    color: #0282f9;
+                    &:after {
+                        transform: scaleX(1);
+                    }
+                }
             }
         }
         .search-input {
